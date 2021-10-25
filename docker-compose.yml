@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+  # App
+  java_sandbox:
+    container_name: '${CONTAINER_NAME:-java_sandbox}'
+    build:
+      context: ./
+      dockerfile: Dockerfile
